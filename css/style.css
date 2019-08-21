@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* marco app */
+
+.frame {
+    min-height: 500px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* div contenedor */
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-family: 'Nunito', sans-serif;
+    color: #ff5858;
+    text-align: center;
+}
+
+/* div contenedor formulario y tareas */
+
+.contenedor-row {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+/* div formulario */
+
+.formulario {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* formulario */
+
+form {
+    flex: 1 1 auto;
+}
+
+#label {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-top: -15px;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    overflow: auto;
+}
+
+#btn-add {
+    background: #ff5858;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#btn-add:hover {
+    background: #e95151;
+}
+
+/* div tareas */
+
+.tareas {
+    flex: 2 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#lista-tareas {
+    width: 80%;
+}
+
+#lista-tareas li {
+    margin-bottom: 15px;
+}
+
+.btn-delete {
+    float: right;
+    cursor: pointer;
+    color: #e95151;
+    font-weight: bold;
+}
+
+/* MOBILE */
+
+@media all and (max-width: 960px) {
+    .contenedor-row {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 470px) {}
